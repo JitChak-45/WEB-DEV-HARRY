@@ -1,0 +1,3 @@
+ Quick Quiz:
+    Without using br tag, write a vertically aligned form asking for name, city and pincode of a user.
+    Everyone must comment

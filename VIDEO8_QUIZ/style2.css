@@ -1,0 +1,18 @@
+td{
+    border: 2px solid #910A67;
+}
+#1{
+    background-color: #030637;
+    height: 4px;
+}
+#2{
+    background-color: #3C0753;
+}
+#3{
+    background-color: #720455;
+}
+#4 input[type="submit"] {
+    display: inline-block;     /* Make the button inline-block */
+    vertical-align: middle;   /* Center it vertically */
+}
+  /* bard copy */
