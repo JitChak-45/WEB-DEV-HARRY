@@ -1,0 +1,13 @@
+.bg-color{
+background-color: yellow;
+}
+.red{
+    color: red;
+}
+#firstdiv{
+color: blue; 
+/* prority: id has greater priority then class */
+}
+#seconddiv{
+    color: aquamarine;
+}
