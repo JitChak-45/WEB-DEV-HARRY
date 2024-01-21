@@ -16,3 +16,13 @@ console.log(a);
 
  console.log(typeof a1,typeof b,typeof k,typeof l,typeof nu);
  console.log("I am testing the console side by sid")
+
+ let obj={
+ "My name":"Jit Chakraborty",
+"My age":22,
+"My father":"prabir"
+ }
+
+ console.log(obj);
+ obj.salary="100crores";
+ console.log(obj);
