@@ -12,6 +12,7 @@ console.log(a);
  let l=undefined;
  let nu=null;
 
- console.log(a1,b,k,l,n);
+ console.log(a1,b,k,l,nu);
 
  console.log(typeof a1,typeof b,typeof k,typeof l,typeof nu);
+ console.log("I am testing the console side by sid")
