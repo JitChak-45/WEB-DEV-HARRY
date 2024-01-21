@@ -1,0 +1,17 @@
+let a=5;
+// let a=7;
+
+{
+    let a=6;
+    console.log(a);
+}
+console.log(a);
+ let a1=3;
+ let b=3.44
+ let k=true;
+ let l=undefined;
+ let n=null;
+
+ console.log(a1,b,k,l,n);
+
+ console.log(typeof a1,typeof b,typeof k,typeof l,typeof n);
