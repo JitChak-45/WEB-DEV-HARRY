@@ -10,8 +10,8 @@ console.log(a);
  let b=3.44
  let k=true;
  let l=undefined;
- let n=null;
+ let nu=null;
 
  console.log(a1,b,k,l,n);
 
- console.log(typeof a1,typeof b,typeof k,typeof l,typeof n);
+ console.log(typeof a1,typeof b,typeof k,typeof l,typeof nu);
