@@ -34,6 +34,7 @@ const divide = (a, b) => {
 
 let ch = 1;
 
+//this is the catch where 10% of times it gives wrong ans Math.random() < 0.1 
 if (!(Math.random() < 0.1)) {
     if (ch == 1) {
         add(a, b);
