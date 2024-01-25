@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INLINE,INTERNAL,EXTERNAL CSS</title>
+    <style>
+      #internal {
+        color: brown;
+        background-color: rgba(225, 168, 168, 0.872);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Three Ways To Implement CSS</h1>
+    </header>
+    <main>
+      <ol>
+        <li>
+          <p
+            id="inline"
+            style="color: rgba(37, 154, 115, 0.715); background-color: bisque"
+          >
+            This Is Styled By Inline CSS
+          </p>
+        </li>
+        <li><p id="internal">This Is Styled By Internal CSS</p></li>
+        <li><p id="external">This Is Styled By External CSS</p></li>
+      </ol>
+    </main>
+    <footer>
+      <h2>Differnt Use Cases Of These Type Of CSS</h2>
+      <ul type="square">
+        <li>Try to minimize inline css.it's not a good practice</li>
+        <li>
+          We use internal besides inline,because ex-if we want to change every
+          div tag style then inline css is a pure overhead
+        </li>
+        <li>we use internal when mimimum css operation have</li>
+        <li>
+          we use external css to reduse size of style tag into index.html and
+          also for good practice.
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
