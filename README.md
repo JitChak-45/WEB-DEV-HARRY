@@ -29,4 +29,4 @@ P.S. Don't forget to check out my [insert cool project link]! It's like a virtua
 
 This is just a template, feel free to customize it with your own personality, projects, and favorite emojis!  Let your creativity shine and make your README a true reflection of your web dev adventure!
 
-I hope this helps you spark some inspiration for your own awesome README file!
+"WE WILL RAISE THE BAR LIKE ANYTHING"
