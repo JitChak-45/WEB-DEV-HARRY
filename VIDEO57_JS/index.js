@@ -6,7 +6,7 @@ console.log("Here we see some example of loops in JS");
     console.log(i);
 }*/
 
-//2......for in loop
+//2......for in loop --> iterate over object
 /*let obj={
     name:"Jit",
     role:"Developer",
@@ -21,7 +21,7 @@ for (const key in obj) {
         console.log(key,val);
 } */
 
-//3......forof loop
+//3......forof loop -->iterate over array or string
 /*for (const i of "Jit Chakraborty") {
     console.log(i);
 }*/
