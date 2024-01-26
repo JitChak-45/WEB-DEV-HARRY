@@ -60,7 +60,7 @@ console.log(a1);//[ 4, 2, 8, 1, 5 ]
 console.log(a1.sort());//[ 1, 2, 4, 5, 8 ]-->it changes the actual array
 
 //splice()
-// [4,2,8,1,3]
+// [1,2,4,5,8]
 
 a1.splice(1,2);
 console.log(a1);//[ 1, 5, 8 ]
