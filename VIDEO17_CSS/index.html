@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      /*  Element Selector  */
+      div {
+        background-color: red;
+      }
+      /* Class Selector */
+      .orange {
+        background-color: orange;
+      }
+      /* Id Selector */
+      #green {
+        background-color: rgb(219, 219, 177);
+        color: rgb(169, 106, 228);
+      }
+
+      /* decendent selector */
+      div p {
+        background-color: blueviolet;
+      }
+      /* Child Selector */
+      div > p {
+        background-color: aquamarine;
+      }
+      /* Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #nocolor{
+        background-color: rgba(247, 245, 242, 0);
+      }
+
+      /* pseudo selector */
+      a:visited{
+        color: yellowgreen;
+      }
+      a:link{
+        color: brown;
+      }
+      a:active{
+        background-color: red;
+      }
+      a:hover{
+        background-color: cadetblue;
+      }
+      p:first-child{
+        /* background-color: ; */
+      }
+
+    </style>
+  </head>
+  <body>
+    <head>
+      <h1>We Learn About Selectors</h1>
+    </head>
+    <main>
+      <div class="orange">I am class selector</div>
+      <div>I am a element selector</div>
+      <div id="green">I am a id selector</div>
+      <div>
+        <p>This is a child selector</p>
+      </div>
+      <div>
+        <article>
+          <p>This is Example of decendent selector</p>
+        </article>
+      </div>
+      <div id="nocolor">
+        <a href="https://www.google.com">Go to google</a>
+      </div>
+    </main>
+    <footer>
+        <div>
+            <p>first child--not applied</p>
+            <p>second child</p>
+        </div>
+    </footer>
+  </body>
+</html>
