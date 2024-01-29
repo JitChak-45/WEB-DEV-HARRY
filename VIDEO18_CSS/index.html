@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model--css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: rgb(236, 224, 11);
+            border: 3px solid black;
+            padding: 15px;
+            height: 50px;
+            margin: 35px;
+           
+        }
+        .box2{
+            color: red;
+            border: 3px solid black;
+            padding: 15px;
+            height: 50px;
+            margin: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- multiple classes using space -->
+    <div class="box box1">Box1</div>
+    <div class="box box2">Box2</div>
+</body>
+</html>
