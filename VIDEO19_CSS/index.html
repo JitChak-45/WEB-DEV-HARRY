@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About--Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Honk&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* @import url('https://fonts.googleapis.com/css2?family=Honk&family=Poppins&display=swap'); There are two methods to do it*/
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        /* when we assign font type then multiple font is assigned because of compatibility in all machine */
+        /* font-family: "Honk", system-ui; */
+        font-family: "Poppins", sans-serif;
+        /* font-style: italic; */
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.8;
+      }
+      h2{
+        text-decoration:underline;
+        text-decoration-style:dashed;
+        text-decoration-thickness: 5px;
+        text-decoration-color: blue;
+        /* about fonts-->About Fonts */
+        text-transform: capitalize;
+        text-align: center;
+        /* text-indent: 45px; */
+      }
+      .lorem{
+        border: 2px solid red;
+        width: 145px;
+        word-break: break-all;
+        /* text-overflow:ellipsis;
+        /* overflow:hidden; */ 
+        
+        
+      }
+      
+    </style>
+  </head>
+  <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+  <body>
+    <div>
+      <h1>Fonts</h1>
+      <h2>about fonts</h2>
+      <p>This is about fonts</p>
+      <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate debitis inventore error, amet libero maiores eum tenetur! Accusamus eveniet labore nostrum consequuntur.</p>
+    </div>
+  </body>
+</html>
