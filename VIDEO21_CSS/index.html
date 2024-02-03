@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity -- CSS</title>
+    <style>
+        /* specificty of this element selector is 1 */
+        h1{
+            color: purple;
+        }
+        /* specificty of this class selector is 10 */
+        .c1{
+            color: blueviolet ;
+            /* !important */
+        }
+        /* specificty of this class selector is 10 */
+        h1.c2{
+            color: rgb(165, 235, 235);
+        }
+        /* specificty of this class selector is 10 */
+        .c3{
+            color: hotpink;
+        }
+        /* specificty of this attribute selector is 10 */
+        [value-x=a]{
+            color: black;
+        }
+        #h11{
+            color: teal;
+        }
+        a{
+            text-transform: capitalize; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="c1 c2 c3" value-x="a" id="h11" >This is About Specificity</h1>
+    <!-- style="color: magenta;" -->
+    <a href="https://www.codewithharry.com/tutorial/css-specificity/">know more</a>
+    
+</body>
+</html>
