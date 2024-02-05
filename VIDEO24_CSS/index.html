@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow & outline</title>
+    <!-- https://www.codewithharry.com/tutorial/css-shadows/ -->
+    <style>
+      .box {
+        box-shadow: 6px 9px 20px 6px #9c4a9344;
+        margin: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      .para {
+        text-shadow: 4px 4px 4px rgb(38, 126, 181);
+      }
+      .outline {
+        border: 2px solid rgb(159, 159, 231);
+        border-radius: 8px;
+        /* oulines apply after border 
+        & it does not impact the actual height and width of the content */
+        outline: 2px solid rgb(31, 105, 18);
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa,
+      necessitatibus amet fuga rem mollitia ab laborum doloribus harum hic aut
+      unde ullam.
+    </p>
+    <div class="box outline">Box2</div>
+  </body>
+</html>
