@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS -- Display</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid blueviolet;
+        /* display: inline; The display: inline property prevents width from having an effect.
+Try setting display to something other than inline.*/
+        display: inline-block;
+        padding: 25px;
+        margin: 10px;
+        width: 100px;
+      }
+      .box1{
+        /* display: none; hide the box and also remove the space that occupied*/
+         /* visibility: hidden;  */
+        /* It contains the space intact but simply hide the box */ 
+        display: inline-flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">This is Box</div>
+    <div class="box">This is Box 2</div>
+    <span>Inline span</span>
+  </body>
+</html>
