@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Overflow</title>
+    <style>
+      .box {
+        height: 30vh;
+        width: 20vw;
+        border: 2px solid black;
+        /* overflow: auto; (if the height and width increases then scroll behaviour does not appear) */
+        /* overflow: scroll; */
+         /* white-space:nowrap;/*nowrap properties makes the all text in one line so horizontal scrollbar access */
+         /*text-overflow: ellipsis; */
+         /* overflow: hidden; */
+            /* overflow: clip;
+            white-space:nowrap; */
+            /* overflow-y: scroll;
+            overflow-x: hidden; */
+            overflow:hidden scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Rohit Sharma 45 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quisquam doloremque placeat minima cupiditate architecto consequatur
+      repellat aspernatur temporibus officiis inventore! Numquam est deserunt
+      quaerat illum necessitatibus rem molestias nisi consectetur beatae omnis.
+      Deleniti fugiat sequi ipsa rerum enim, numquam sed, corporis assumenda
+      alias a cupiditate.
+    </div>
+  </body>
+</html>
