@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position-CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        margin: 2vh;
+        padding: 2vw;
+        border: 2px solid red;
+        position: absolute;
+        /* position: relative;
+        position: fixed;
+        position: sticky; does not matter how the parent is possitioned child position absolute is work on parent*/
+        height: 200vw;
+        /* transform,filter,perspective properties can also make an element appear positioned*/
+        /* transform: translate(0); */
+        /* filter: invert(0); */
+        /* perspective: 0em; */
+      }
+      .box {
+        border: 2px solid black;
+        width: 80vw;
+        margin: 3vh;
+        padding: 3vh;
+        height: 20vh;
+      }
+      .box1 {
+        background-color: aqua;
+        /* position: relative;
+        z-index: 1; */
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 3px;
+      }
+      .box2 {
+        background-color: azure;
+        position: relative;
+        top: 22vh;
+        left: 5vw;
+      }
+      .box3 {
+        background-color: bisque;
+        position: fixed;
+        bottom: 0px;
+      }
+      .box4 {
+        background-color: purple;
+        position: sticky;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">BOX IS POSITIONED ABSOLUTE</div>
+      <div class="box box2">BOX IS POSITIONED relative</div>
+      <div class="box box3">BOX FIXED</div>
+      <div class="box box4">STICKY(use on nav bar)</div>
+    </div>
+  </body>
+</html>
