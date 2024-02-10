@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card exercise</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(228, 225, 225);
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .parent {
+      margin-left: 34vw;
+      margin-top: 2vw;
+      padding: 6px;
+      border: 1px solid rgba(131, 131, 243, 0.5);
+      border-radius: 9px;
+      height: 76vh;
+      width: 26vw;
+      background-color: white;
+    }
+    .photo{
+      height: 37vh;
+        width:26vw;
+        border-radius: 9px;
+    }
+    .photo img{
+        /* position: relative; */
+        height: 37vh;
+        width:26vw;
+        object-fit:cover;
+        border-radius: 9px;
+        /* top: 11px; */
+        background-color: white;
+    }
+    .capsule{
+        /* position: relative;
+        top: 3vh; */
+        margin: 18px;
+        background-color: white;
+        
+    }
+    .capsule #Nature{
+        border: 1px solid rgba(10, 10, 10, 0.422);
+       border-radius: 15px;
+       padding: 4px 8px;
+       font-size: 13px;
+       background-color: white;
+       color: rgba(0, 0, 0, 0.521);
+       font-weight: 600;
+       margin-right: 5px;
+       cursor: pointer;
+    }
+    .capsule #Lake{
+      border: 1px solid rgba(10, 10, 10, 0.422);
+       border-radius: 15px;
+       padding: 4px 8px;
+       font-size: 13px;
+       background-color: white;
+       color: rgba(0, 0, 0, 0.521);
+       font-weight: 600;
+       cursor: pointer;
+    }
+    .text h2,p{
+      background-color: white;
+    }
+    .text h2{
+      color: rgba(0, 0, 0, 0.865);
+      padding-left: 14px;
+      text-transform: capitalize;
+    }
+    .text p{
+      color: rgba(0, 0, 0, 0.521);
+      font-size: 13px;
+      font-weight: 600;
+      padding-left: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .know{
+      background-color: white;
+      text-align: center;
+      
+    }
+    .know a:link{
+        top: 8vh;
+        text-decoration:none;
+        color: rgb(47, 147, 255);
+        background-color: rgba(76, 156, 241, 0.244);
+        border-radius: 15px;
+        padding: 9px 18px; 
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    .know a:visited{
+        text-decoration:none;
+        color: rgb(47, 147, 255);
+        background-color: rgba(76, 156, 241, 0.244);
+        border-radius: 15px;
+        padding: 9px 18px; 
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+  </style>
+  <body>
+    <div class="parent">
+        <div class="photo">
+            <img src="image.jpg" alt="nature">
+        </div>
+        <div class="capsule">
+            <span id="Nature">Nature</span>
+            <span id="Lake">Lake</span>
+        </div>
+        <div class="text">
+            <h2>lago di braies</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="know">
+            <a href="/">Read More</a>
+            
+        </div>
+    </div>
+  </body>
+</html>
