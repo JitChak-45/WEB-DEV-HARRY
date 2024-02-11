@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS VARIABLE</title>
+    <style>
+        /* Css variable */
+      :root {
+        --pricol: rgb(26, 26, 243);
+        --seccol: rgb(134, 134, 216);
+        --tercycol:rgb(250, 206, 125);
+        --defpad:23px;
+        --defop:0.3;
+        /* Note:css variable not only used for color (inteerview question) it can store background string number */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* div:first-child{
+            background-color: orange;
+        } */
+      .nav {
+        /* background-color: orange */
+        background-color: var(--pricol);
+      }
+      ul {
+        display: flex;
+        
+      }
+      ul li {
+        list-style: none;
+        padding: var(--defpad);
+        /* padding: 23px; */
+        border: 2px solid var(--tercycol);
+        opacity: var(--defop);
+      }
+      .para {
+        /* background-color: rgb(226, 196, 140); */
+        background-color: var(--seccol);
+      }
+      li:first-child{
+        --tercycol:rgb(214, 125, 250);
+        /* local precidence first */
+        /* background-color: blueviolet; */
+        background-color: var(--tercycol,red);
+        opacity: var(--defop);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Project</li>
+      </ul>
+    </div>
+    <div class="para">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius
+        consectetur architecto veniam quam enim dolor esse! Itaque, unde
+        voluptates autem quo animi ad et molestiae, aliquid repellat ipsa illum!
+        Iusto, quis tempore quo nostrum officia similique dicta in, impedit,
+        nemo maiores maxime repellendus accusamus!
+      </p>
+    </div>
+  </body>
+</html>
