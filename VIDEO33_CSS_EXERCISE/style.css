@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --textcolor:white;
+    --textcolor2:red;
+    --textcolor3:rgb(127, 249, 127);
+    --bgcolor:darkblue;
+    --bgcolor2:rgb(163, 67, 232);
+    --bgcolor3:rgb(198, 24, 233);
+    --textsize:30px;
+}
+nav{
+    padding: 25px;
+    height: 5vh;
+    background-color: var(--bgcolor2);
+    color: var(--textcolor);
+    font-size: var(--textsize);
+    text-align: center;
+}
