@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS selectors</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* .box :first-child means the first child of its parent container here its parent is boxes*/
+      .box:first-child {
+        background-color: rgb(146, 245, 245);
+      }
+      /* .boxes:first-child means the forst child of its parent here its parent is body */
+      .boxes:first-child {
+        padding: 4px;
+        border: 2px solid mediumslateblue;
+      }
+      .box:nth-child(even):first-line {
+        font-size: 35px;
+        color: green;
+      }
+      .box {
+        margin: 1px;
+        border: 1px solid magenta;
+      }
+      .box:last-child {
+        background-color: rgb(244, 131, 131);
+      }
+      .boxes::before {
+        content: "Hey my name is Jit";
+      }
+      .boxes::after {
+        content: "This website is design and developed by Jit Chakraborty";
+      }
+      input::placeholder {
+        background-color: rgba(219, 118, 219, 0.534);
+        color: black;
+      }
+      ::selection {
+        background-color: green;
+        color: white;
+      }
+      [name="jit"] {
+        padding-left: 30px;
+      }
+      .boxes * {
+        background-color: rgba(177, 119, 231, 0.543);
+      }
+      /* grouping */
+      p,
+      a,
+      div,
+      input {
+        padding: 3px;
+      }
+      /* .box:nth-last-child(x) this target the nth last number*/
+      [name="jit"]::first-letter {
+        color: peru;
+        font-size: 33px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box" name="jit">Hey I am a first box</div>
+      <div class="box">
+        Hey I am a second box Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. In, id expedita. Minus cupiditate esse iure nostrum adipisci
+        blanditiis iusto quam in illo vel facilis, nam, voluptatem nemo error!
+        Provident, libero.
+      </div>
+      <div class="box">Hey i am a third box</div>
+    </div>
+    <input type="text" placeholder="Enter Your name" />
+  </body>
+</html>
