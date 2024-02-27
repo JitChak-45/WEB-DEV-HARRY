@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSSS EXERCISE(DESIGN LAYOUT)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 200vh;
+      }
+      .navbar {
+        position: sticky;
+        top: 0px;
+        height: 10vh;
+        width: 100vw;
+        background-color: pink;
+        box-sizing: border-box;
+      }
+      .boxes {
+        background-color: rgb(15, 129, 15);
+        height: 90vh;
+        width: 100vw;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        padding: 73px;
+      }
+      .box1,
+      .box2 {
+        /* position: absolute; */
+        height: 39vh;
+        width: 22vw;
+        margin: 102px;
+        background-color: red;
+      }
+
+      .logo {
+        border-radius: 50%;
+        padding: 40px;
+        background-color: aqua;
+        margin-left: 90vw;
+        margin-top: 72vh;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">t</nav>
+    <main class="boxes">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </main>
+    <div class="logo"></div>
+    <div class="text"></div>
+    <footer class="foot"></footer>
+  </body>
+</html>
