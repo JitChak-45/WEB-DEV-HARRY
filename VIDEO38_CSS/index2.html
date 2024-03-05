@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex grow and Flex shrink</title>
+    <style>
+      .container {
+        border: 2px solid green;
+        display: flex;
+        flex-direction: row;
+        background-color: bisque;
+        height: 80vh;
+        gap: 4px;
+        align-items: center;
+      }
+      .items {
+        height: 62px;
+        width: 62px;
+        background-color: aqua;
+        border: 1px solid black;
+        
+        /* flex-grow: 1; */
+      }
+      .item1 {
+        /* flex-grow: 2; */
+        /* it shrink in 2x speed */
+        flex-shrink: 2;
+      }
+      .item2{
+        align-self:flex-start;
+      }
+      .item3{
+        align-self:flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="items item1"></div>
+        <div class="items item2">1</div>
+        <div class="items item3"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+  </body>
+</html>
