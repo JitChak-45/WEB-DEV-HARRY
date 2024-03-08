@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise FlexBox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        display: flex;
+        width: 100vw;
+        height: 16vh;
+      }
+      .navleft {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navleft img {
+        height: 59px;
+        width: 175px;
+      }
+      .navright {
+        width: 70%;
+        /* margin-right: 12px; */
+        display: flex;
+        font-family: "Segoe UI";
+        justify-content: flex-end;
+        gap: 51px;
+        align-items: center;
+      }
+      .navright >.logo img{
+        margin-right: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navleft">
+        <div class="logo">
+          <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div class="navright">
+        <div class="nav-content">Product</div>
+        <div class="nav-content">Pricing</div>
+        <div class="nav-content">Resources</div>
+        <div class="nav-content">About Us</div>
+        <div class="nav-content">Security and compliance</div>
+        <div class="logo">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwNTmpXCvJtk3jhfeIgulZmDznJN8Tdb8kXg&usqp=CAU"
+            alt="language change"
+            height="26px"
+            width="26px"
+          />
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
