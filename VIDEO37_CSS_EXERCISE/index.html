@@ -5,58 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSSS EXERCISE(DESIGN LAYOUT)</title>
     <style>
+      :root {
+        --nav-color: pink;
+        --body-color: rgb(15, 129, 15);
+        --box1-color: rgb(211, 146, 42);
+        --box2-color: rgb(25, 182, 203);
+        --logo-color: aqua;
+        --text-color: rgb(223, 220, 220);
+        --text-color2: rgb(0, 0, 0);
+        --foot-color: rgba(223, 174, 114, 0.811);
+      }
       * {
         margin: 0;
         padding: 0;
+        /* background-color: black; */
       }
       body {
         height: 200vh;
+        width: 100vw;
+        /* overflow-x: hidden; */
       }
       .navbar {
         position: sticky;
         top: 0px;
         height: 10vh;
         width: 100vw;
-        background-color: pink;
-        box-sizing: border-box;
+        background-color: var(--nav-color);
       }
-      .boxes {
-        background-color: rgb(15, 129, 15);
+      .container {
+        background-color: var(--body-color);
         height: 90vh;
         width: 100vw;
+        padding: 5vh 4vw;
         box-sizing: border-box;
+        display: inline-flex;
         position: absolute;
         z-index: -1;
-        display: flex;
-        padding: 73px;
       }
-      .box1,
+      .box1 {
+        height: 400px;
+        width: 400px;
+        background-color: var(--box1-color);
+      }
       .box2 {
-        /* position: absolute; */
-        height: 39vh;
-        width: 22vw;
-        margin: 102px;
-        background-color: red;
+        height: 400px;
+        width: 400px;
+        margin-left: 29vw;
+        background-color: var(--box2-color);
       }
 
       .logo {
         border-radius: 50%;
         padding: 40px;
-        background-color: aqua;
+        background-color: var(--logo-color);
         margin-left: 90vw;
         margin-top: 72vh;
         position: fixed;
       }
+      .container2 {
+        position: absolute;
+        top: 100vh;
+        z-index: -1;
+        width: 100vw;
+        height: 90vh;
+        background-color: var(--text-color2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text {
+        padding: 8vh;
+        width: 80vw;
+        height: 20vh;
+        border: 2px solid var(--text-color);
+        border-radius: 12px;
+        color: var(--text-color);
+        background-color: var(--text-color2);
+      }
+      .foot {
+        position: relative;
+        z-index: -1;
+        top: 180vh;
+        width: 100vw;
+        height: 10vh;
+        background-color: var(--foot-color);
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar">t</nav>
-    <main class="boxes">
+    <nav class="navbar"></nav>
+    <main class="container">
       <div class="box1"></div>
       <div class="box2"></div>
     </main>
     <div class="logo"></div>
-    <div class="text"></div>
+    <div class="container2">
+      <div class="text">
+        <h1>Welcome to Web Development Express</h1>
+      </div>
+    </div>
+
     <footer class="foot"></footer>
   </body>
 </html>
