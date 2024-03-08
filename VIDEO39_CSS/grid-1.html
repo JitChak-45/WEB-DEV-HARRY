@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GRID</title>
+    <style>
+
+      .container {
+        width: 80vw;
+        height: 80vh;
+        border: 2px solid black;
+        display: grid;
+        /* we can name the row and column line */
+        /* grid-template-columns: [pehla] 120px [doosra] 100px [t];
+        grid-template-rows: [first_row] 100px [second_row] 100px [third_row] 100px; */
+        /* grid-template-columns: repeat(3,1fr); */
+        grid-template-columns: repeat(3,40px);
+        grid-template-rows: repeat(2,80px);
+        /* grid-template-columns: 1fr 1fr 1fr; same thingh */
+        /* grid-template-columns: repeat(3,minmax(40px,1fr))  minmax function; */
+        gap: 14px 14px;
+         justify-items: center; /*learn the diiference between justify-content vs justify-items; */
+        align-items: center; 
+         justify-content: center; /*justify content and align content applies on total grid while container is large than the grid/ */
+         align-content: center; /* learn it from harry grid 31:00 */
+         
+         /* place content = justify content +align content */
+        
+         place-content: center;
+      }
+      .item {
+        border: 2px solid red;
+        height: 45px;
+        width: 45px;
+      }
+      .item-2{
+        align-self: flex-start;
+        
+      }
+      /* .item-4 {
+        grid-column: pehla/doosra;
+        grid-row: first_row/second_row;
+      }
+      .item-1 {
+        grid-column: pehla/2;
+        grid-row: 1/2;
+
+        /* same thing
+            grid-row-start: ;
+            grid-row-end: ; 
+            grid-column-start: ;
+            grid-column-end: ;*/
+      /* } */ 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item">3</div>
+      <div class="item item-4">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

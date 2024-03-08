@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GRID</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        display: grid;
+        grid-template-areas:
+          "nav nav nav"
+          "side main main"
+          "footer footer footer";
+          height: 80vh;
+      }
+      .item {
+        border: 2px solid red;
+        /* height: 45px;
+        width: 45px; */
+      }
+      .item-1 {
+        grid-area: nav;
+        background-color: rgb(202, 158, 243);
+      }
+      .item-2 {
+        grid-area: side;
+        background-color: beige;
+      }
+      .item-3 {
+        grid-area: main;
+        background-color: azure;
+      }
+      .item-4 {
+        grid-area: footer;
+        background-color: rgb(237, 215, 161);
+      }
+      .item-5{
+        /* overlapping with 1 */
+        grid-area: nav;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+      <div class="item item-5">5</div>
+    </div>
+  </body>
+</html>
