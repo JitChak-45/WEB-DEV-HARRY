@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Transform</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      .container {
+        width: 100vw;
+        height: 80vh;
+        border: 2px solid palevioletred;
+      }
+      .box {
+        height: 55px;
+        width: 55px;
+        background-color: beige;
+        border: 2px solid black;
+        /* transform: rotate(45deg); */
+        /* transform: rotate(0.125turn); 1 turn=360 deg */
+        /* transform: rotateX(0.125turn); */
+        /* transform: rotateY(0.125turn); */
+        /* transform: rotateZ(0.125turn); */
+        /* transform: rotateY(0.125turn); */
+
+        /* transform: scale(1.5); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.5); */
+        /* transform: scale3d(1.5); z axis does not seen*/
+
+        /* transform: skew(5deg); */
+        /* transform: skewX(5deg); */
+        /* transform: skewY(5deg);z axis does not support skew */
+
+        /* transform: translate(100%); translate by the width of hte width of the box */
+        /* transform: translateX(100px); */
+        /* transform: translateY(100%); */
+        /* transform: translateX(-50%) skew(10deg) translateY(50%); */
+        transform-origin: 0% 0%;/* the pivot point */
+        transform: rotate(5deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box</div>
+    </div>
+  </body>
+</html>
