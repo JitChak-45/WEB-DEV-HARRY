@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>card</title>
+    
     <style>
       * {
         margin: 0;
@@ -11,18 +12,27 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
       .card {
+        /* margin: 20vw; */
         width: 258px;
         height: 124px;
         padding: 9px;
+        transition: all 1s cubic-bezier(0.09, 0.5, 0, 0.99) 0.1s;
       }
-      .card:hover{
-        animation: name 0.9s ease-in-out 0.2s iteration-count direction fill-mode;
+      .card:hover {
+        transform: scale(1.01);
+        border-radius: 5px;
         background-color: whitesmoke;
         box-shadow: 5px 5px 20px 0px #00000061;
       }
       .card h2,
       p {
         text-align: center;
+      }
+      .card h2{
+        font-size: 20px;
+      }
+      .card p{
+        font-size: 12px;
       }
       .container {
         padding-top: 20px;
@@ -34,12 +44,27 @@
       .box {
         height: 36px;
         width: 124px;
-        font-size: 14px;
-        background-color: #00b6d1;
+        font-size: 12px;
         border-radius: 5px;
         font-weight: bold;
-        font-style: normal;
-        /* text-decoration: none; */
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:0.3s;
+      }
+      .box1:hover{
+        background-color: #01a6c0;
+      }
+      .box2:hover{
+        background-color: #5cb85ce0;
+      }
+      .box1 {
+        background-color: #00b6d1;
+      }
+      .box2 {
+        background-color: #5cb85c;
       }
 
       @media only screen and (max-width: 352px) {
@@ -47,6 +72,7 @@
           flex-direction: column;
         }
       }
+      
     </style>
   </head>
   <body>
@@ -54,9 +80,10 @@
       <h2>English</h2>
       <p><small>India</small></p>
       <div class="container">
-        <div class="box box1">Download 32-bit</div>
-        <div class="box box2">Download 64-bit</div>
+        <a class="box box1" href="/">Download 32-bit</a>
+        <a class="box box2" href="/">Download 64-bit</a>
       </div>
     </div>
+    
   </body>
 </html>
