@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .container {
+        width: 50vw;
+        height: 70vh;
+        background-color: plum;
+      }
+      .box {
+        height: 7vh;
+        width: 5vw;
+        background-color: salmon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation-name: harryKaAnimation;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.01,-0.01, 0, 0.99);
+        animation-delay: 0.3s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate-reverse;
+        animation-play-state: paused; 
+        animation-play-state: running;
+        animation-fill-mode: forwards; */
+        /* animation: harryKaAnimation 3s cubic-bezier(0.01,-0.01, 0, 0.99) 2s 1 backwards; */
+        animation: harry2 3s cubic-bezier(0.01,-0.01, 0, 0.99) 1 forwards,
+                    harryKaAnimation 3s cubic-bezier(0.01,-0.01, 0, 0.99) 3.1s 1 forwards;
+      }
+
+      @keyframes harryKaAnimation {
+        from{
+            background-color: rgb(167, 213, 253);
+        }
+        to{
+            background-color: #0088ff;
+            transform: translateX(45vw) translateY(63vh);
+        }
+        
+      }
+      @keyframes harry2 {
+        0%{
+            transform: rotate(45deg);
+        }
+        25%{
+            transform: rotate(90deg);
+        }
+        50%{
+            transform: rotate(135deg);
+        }
+        75%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box</div>
+    </div>
+  </body>
+</html>
