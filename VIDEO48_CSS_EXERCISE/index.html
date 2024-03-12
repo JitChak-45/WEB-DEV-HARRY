@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce animation</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 70vh;
+            background-color: blue;
+            position: relative;
+        }
+        .box{
+            height: 7vh;
+            width: 8vw;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: y-direction 1s ease-out 2 alternate backwards,
+                       x-direction 2s 4 normal;
+            /* animation-direction: normal; ,x-direction 3s  4 normal forwards*/
+            /* animation-direction: alternate; */
+        }
+        @keyframes y-direction {
+            from{
+
+            }
+            to{
+                transform: translateY(-33vh);
+            }
+        }
+        @keyframes x-direction {
+            25%{
+                transform: translateX(20vw);
+            }
+            50%{
+                transform: translateX(40vw);
+            }
+            75%{
+                transform: translateX(60vw);
+            }
+            100%{
+                transform: translateX(80vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
