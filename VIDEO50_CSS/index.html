@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Filters</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* justify-content: center;now the main-axis and cross-axis interchange  */
+        align-items: center;
+      }
+      .img1,
+      .img2,
+      .img3 {
+        height: 50vh;
+        width: 50vh;
+        object-fit: cover;
+      }
+      .img1 {
+        /* filter: drop-shadow(16px 16px 20px blue),sepia(60%); */
+        filter:sepia(60%);
+      }
+      .img2 {
+        object-position: top;
+        filter: invert(1);
+      }
+      .img3 {
+        filter: grayscale(100%) opacity(50%);
+      }
+      /* ( https://developer.mozilla.org/en-US/docs/Web/CSS/filter ) link of the mdn referenced filter */
+      /* <filter-function> values */
+      /* filter: blur(5px);
+        filter: brightness(0.4);
+        filter: contrast(200%);
+        filter: drop-shadow(16px 16px 20px blue);
+        filter: grayscale(50%);
+        filter: hue-rotate(90deg);
+        filter: invert(75%);
+        filter: opacity(25%);
+        filter: saturate(30%);
+        filter: sepia(60%);
+
+/* URL */
+      /* filter: url("filters.svg#filter-id"); */
+
+      /* Multiple filters */
+      /* filter: contrast(175%) brightness(3%);
+filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue); */
+
+      /* Use no filter */
+      /* filter: none; */
+
+      /* Global values */
+      /* filter: inherit;
+filter: initial;
+filter: revert;
+filter: revert-layer;
+filter: unset;  */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="img1"
+        src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQDVcnfU4OcUxO1qh05Ffnaod8lqJ_UoZqFc8ZzxT_abUmYmu49G_ixe5ENM5g6QbF67dTF0MA-bYdDdCI"
+        alt=""
+      />
+
+      <img
+        class="img2"
+        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Rohit_Gurunath_Sharma.jpg"
+        alt=""
+      />
+
+      <img
+        class="img3"
+        src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/rohit-sharma-071855-1x1.jpg?VersionId=raXx8EcB89UNSSeInVcKxSaKgHbk8cXQ"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
