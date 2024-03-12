@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit &object position & background</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 476px;
+            padding: 4px;
+            /* background-color: rgb(208, 238, 238); */
+            border: 1px solid black;
+            background-image: url(https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg);
+            background-position: 50% 30%;
+            /* background-repeat: no-repeat; by default image are repeation when container is large than its height and width to remove that use no-repeat property */
+            /* background-repeat:repeat-x; when you want to repeat the image only x direction while the height of the image is less than the container */
+            /* background-repeat: repeat-y; when you want to repeat the image only y direction while the width of the image is less than the container  */
+
+
+            
+            /* background-clip: border-box; */
+            /* background-clip:padding-box; */
+            /* background-clip: content-box; */
+        }
+        .box img{
+            height: 488px;
+            width: 476px;
+            /* object-fit:fill; default */
+            /* object-fit:scale-down; */
+            /* object-fit:none; */
+            object-fit:cover;
+
+            /* object-fit:contain; check (object fit-> contain and object position->top right,top left,bottom left,bottom right) */
+
+            /* object-position: top right; */
+            /* object-position: top left; */
+            /* object-position: 10px 10px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="images"> -->
+        </div>
+    </div>
+</body>
+</html>
