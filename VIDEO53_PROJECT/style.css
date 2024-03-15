@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-size:max(1300px,100vw);
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.main .box{
+    height: 80vh;
+    width:100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+nav{
+    max-width: 80vw;
+    /* width: 80vw; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+nav .logo{
+    width: 140px;
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    position: relative;
+    z-index: 1;
+}
