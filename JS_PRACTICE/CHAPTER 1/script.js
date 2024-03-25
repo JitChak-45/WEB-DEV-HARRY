@@ -16,6 +16,8 @@ const obj={
 console.log(obj);
 obj.salary="20000";
 console.log(obj);
+obj["age of Jit"]=23;
+console.log(obj);
 
 const obj2={
     "apple":"a fruit",
