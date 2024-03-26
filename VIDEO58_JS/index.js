@@ -24,18 +24,18 @@ changeName("Vendi");*/
 
 //function to add two numbers
 
-/*function sum(a,b,c=3){
-    console.log(a,b,c);
-    return a+b+c;
-}
+// function sum(a, b, c = 3) {
+//     console.log(a, b, c);
+//     return a + b + c;
+// }
 
-result1=sum(4);
-result2=sum(2,3);
-result3=sum(1,3,1);
+// result1 = sum(4);
+// result2=sum(2,3);
+// result3=sum(1,3,1);
 
-console.log("Sum of items are : ",result1);//NaN means not a number here b is undefinde at )(30 line)
-console.log("Sum of items are : ",result2);
-console.log("Sum of items are : ",result3);*/
+// console.log("Sum of items are : ", result1);//NaN means not a number here b is undefinde at )(30 line)
+// console.log("Sum of items are : ",result2);
+// console.log("Sum of items are : ",result3);
 
 //arrow function
 
@@ -43,7 +43,7 @@ const func1=(x)=>{
     console.log("I am a arrow function : ",x)
 }
 
-func1(3);
+// func1(3);
 func1(45);
-func1(54);
+// func1(54);
 
