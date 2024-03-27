@@ -1,0 +1,1 @@
+console.log("har\"".length);//my answer is 4
