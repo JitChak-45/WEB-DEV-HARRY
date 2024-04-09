@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
-      body {
-        font-family: "Bungee Spice", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 30px;
-        background-color: green;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box">Initializing Hacking ...</div>
-    <!-- Initializing Hacking...
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+    body {
+      font-family: "Bungee Spice", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div>Initializing Hacking.</div>
+  <!-- Initializing Hacking...
     Reading your Files...
     Password files Detected...
     Sending all passwords and personal files to server...
     Cleaning up... -->
-  </body>
-  <script>
-    let getRansom=()=>{
-      setInterval(() => {
-        
-      }, timeout);
+</body>
+<script>
+  let addItem = async (item) => {
+    let div = document.createElement("div");
+    div.innerHTML = item;
+    await getRandom();
+    document.body.append(div);
+  }
+  let getRandom = () => {
+    let timeout = 1 + 6 * Math.random();
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, timeout * 1000);
+    })
+
+  }
+
+  async function main() {
+    let t = setInterval(() => {
+      let last = document.body.getElementsByTagName("div");
+      last = last[last.length - 1];
+      if (last.innerHTML.endsWith("...")) {
+        last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
+      }
+      else {
+        last.innerHTML = last.innerHTML + ".";
+      }
+    }, 100);
+
+    let text = ["Initialized Hacking now reading your data",
+      "Reading your Files",
+      "Password files Detected",
+      "Sending all passwords and personal files to server",
+      "Cleaning up"]
+    addEllipsis = () => {
+      let last = document.body.getElementsByTagName("div");
+      last = last[last.length - 1];
+      if (last.innerHTML.endsWith("...")) {
+        // Do nothing if already ends with ellipsis
+      } else if (last.innerHTML.endsWith("..")) {
+        last.innerHTML = last.innerHTML + ".";
+      } else if (last.innerHTML.endsWith(".")) {
+        last.innerHTML = last.innerHTML + "..";
+      } else {
+        last.innerHTML = last.innerHTML + "...";
+      }
     }
-  </script>
+    for (const i of text) {
+      await addItem(i);
+
+      await addEllipsis();
+    }
+    await getRandom();
+    clearInterval(t);
+  }
+  main();
+</script>
+
 </html>
