@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar's coloring</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            font-family: sans-serif;
+        }
+        nav{
+            background-color: rgb(5, 5, 83);
+            height: 10vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .items{
+            list-style: none;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <li class="items">Home</li>
+        <li class="items">Projects</li>
+        <li class="items">Contact</li>
+        <li class="items">Portfolio</li>
+        <li class="items">About us</li>
+    </nav>
+</body>
+<script>
+    // let el1=document.querySelector(".items");
+    let el1=document.getElementsByClassName("navbar")[0].children[0];
+    el1.style.backgroundColor="red";
+</script>
+</html>
