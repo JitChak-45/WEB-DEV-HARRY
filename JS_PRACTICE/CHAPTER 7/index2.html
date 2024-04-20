@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding: 10px;
+        border: 2px solid black;
+      }
+      .box {
+        margin: 5px;
+        padding: 7px;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+  </body>
+  <script>
+    // document.querySelector(".container").firstElementChild.style.backgroundColor = "green";
+    // document.querySelector(".container").lastElementChild.style.backgroundColor = "green";
+
+    // let container=document.querySelector(".container");
+    // let children=container.children;
+
+    // for(let i=0;i<children.length;i++){
+    //     if(i===0 || i===children.length-1){
+    //         children[i].style.backgroundColor="green";
+    //     }
+    // }
+    let items = document.getElementsByClassName("container")[0].children;
+
+    for (let i=0;i<items.length;i++) {
+      if (i === 0 || i === items.length - 1) {
+        items[i].style.backgroundColor = "green";
+      }
+    }
+  </script>
+</html>
