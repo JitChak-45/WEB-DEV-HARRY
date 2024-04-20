@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert's on click buttons</title>
+    <style>
+      .box {
+        height: 130px;
+        width: 190px;
+        border: 2px solid red;
+        margin-top: 20px;
+        margin-left: 3px;
+        /* display: flex;
+            flex-direction: column; */
+        text-align: center;
+      }
+      .container {
+        display: flex;
+      }
+      .box p {
+        height: 130px;
+        margin: 0;
+        overflow-y: auto;
+      }
+      .box .submit1,
+      .submit2,
+      .submit3 {
+        margin-top: 9px;
+        padding: 7px;
+        font-weight: bolder;
+        cursor: pointer;
+        /* cursor: progress; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugiat
+          deserunt maxime illo facilis?Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Nemo sequi pariatur hic est. Aut, consectetur?
+        </p>
+        <button class="submit1">submit</button>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet
+          provident neque ratione corrupti!Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nemo sequi pariatur hic est. Aut,
+          consectetur?
+        </p>
+        <button class="submit2">submit</button>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          quidem autem expedita iste libero?Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nemo sequi pariatur hic est. Aut,
+          consectetur?
+        </p>
+        <button class="submit3">submit</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let btn1 = document.querySelector(".submit1");
+    let btn2 = document.querySelector(".submit2");
+    let btn3 = document.querySelector(".submit3");
+
+    btn1.addEventListener("click", () => {
+      alert("Box 1 content is submitted");
+    });
+    btn2.addEventListener("click", () => {
+      alert("Box 2 content is submitted");
+    });
+    btn3.addEventListener("click", () => {
+      alert("Box 3 content is submitted");
+    });
+  </script>
+  <!-- <script src="script.js"></script> -->
+</html>
