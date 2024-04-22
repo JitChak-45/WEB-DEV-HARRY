@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#urlInput {
+    width: 80%;
+    padding: 8px;
+    margin: 10px auto;
+    display: block;
+}
+
+#addBookmarkBtn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#bookmarkList {
+    margin-top: 20px;
+}
+
+.bookmark-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.remove-btn {
+    padding: 4px 8px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Bookmark Manager</h1>
+    <input type="text" id="urlInput" placeholder="Enter website URL">
+    <button id="addBookmarkBtn">Add Bookmark</button>
+    <div id="bookmarkList"></div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const urlInput = document.getElementById("urlInput");
+    const addBookmarkBtn = document.getElementById("addBookmarkBtn");
+    const bookmarkList = document.getElementById("bookmarkList");
+
+    addBookmarkBtn.addEventListener("click", () => {
+        const url = urlInput.value.trim();
+        if (url !== "") {
+            addBookmark(url);
+            urlInput.value = "";
+        }
+    });
+
+    function addBookmark(url) {
+        const bookmarkItem = document.createElement("div");
+        bookmarkItem.classList.add("bookmark-item");
+        bookmarkItem.innerHTML = `
+            <a href="${url}" target="_blank">${url}</a>
+            <button class="remove-btn">Remove</button>
+        `;
+        bookmarkList.appendChild(bookmarkItem);
+
+        bookmarkItem.querySelector(".remove-btn").addEventListener("click", () => {
+            bookmarkItem.remove();
+        });
+    }
+});
+
+</script>
+</html>
