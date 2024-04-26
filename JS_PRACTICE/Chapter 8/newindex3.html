@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark's Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .urlInput {
+            margin-top: 15px;
+            max-width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #url {
+            width: 78%;
+            height: 3vh;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        #addUrlBtn {
+            width: 15%;
+            padding: 25px;
+            border-radius: 3px;
+            height: 3vh;
+            margin-left: 5px;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(60, 60, 228);
+            border-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .bookmarkList{
+            border: 1px solid black;
+            margin: 20px;
+            min-height: 100vh;
+            padding: 10px;
+        }
+        .bookmark{
+            height: 3vh;
+            border: 1px solid black;
+            padding: 3px;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .urlText{
+            width: 90%;
+        }
+        .remove{
+            padding: 6px;
+            border-radius: 3px;
+            background-color: crimson;
+            color: wheat;
+            font-weight: bold;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bookmarks Manager</h1>
+    <div class="urlInput">
+        <input type="text" name="url" id="url" placeholder="Enter The Url">
+        <button type="button" id="addUrlBtn">Add Bookmark</button>
+    </div>
+    <div class="bookmarkList">
+        
+    </div>
+    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+    const urlInput=document.getElementById("url");
+    const urlButton=document.getElementById("addUrlBtn");
+    const bookmarkList=document.querySelector(".bookmarkList");
+    // const bookmarkList=document.querySelector("bookmarkList");
+
+    urlButton.addEventListener("click",()=>{
+        const url=urlInput.value.trim();
+        if(url!==""){
+            addBookmark(url);
+            urlInput.value="";
+        }
+    });
+
+    function addBookmark(url){
+        const bookmarkItem=document.createElement("div");
+        bookmarkItem.classList.add("bookmark-item");
+        bookmarkItem.innerHTML=`<div class="bookmark">
+            <a href="${url}" class="urlText">${url}</a>
+            <button class="remove">Remove</button>
+        </div>`;
+        bookmarkList.append(bookmarkItem);
+
+        bookmarkItem.querySelector(".remove").addEventListener("click", () => {
+            bookmarkItem.remove();
+        });
+    }
+})
+</script>
+
+</html>
