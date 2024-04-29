@@ -99,7 +99,7 @@ let prom5 = new Promise((resolve, reject) => {
 //     console.log(err)
 // })
 
-//promise.amy---->
+//promise.any---->
 // let p=Promise.any([prom1,prom2,prom3,prom4,prom5]);
 
 // p.then((a)=>{
