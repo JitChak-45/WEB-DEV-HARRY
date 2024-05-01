@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing of post/put/delete request</title>
+  </head>
+  <body>
+    <script>
+    //   async function testPost() {
+    //     const a = await fetch("/", { method: "POST" });
+    //     const b= await a.text();
+    //     console.log(b);
+    //   }
+
+    // async function testPost() {
+    //     const a = await fetch("/", { method: "PUT" });
+    //     const b= await a.text();
+    //     console.log(b);
+    //   }
+
+    async function testPost() {
+        const a = await fetch("/", { method: "DELETE" });
+        const b= await a.text();
+        console.log(b);
+      }
+      testPost();
+    </script>
+  </body>
+</html>
