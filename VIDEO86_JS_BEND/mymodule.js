@@ -4,7 +4,7 @@
 // export const d=4;//named export
 // export const e=5;//named export
 
-// in package.json-->"type": "commonjs"
+// in package.json-->"type": "module"
 
 const obj={
     x:5,
