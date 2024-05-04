@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fs = require("fs/promises");
 
 // console.log(fs);
 console.log("Starting");
