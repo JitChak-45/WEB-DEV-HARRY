@@ -1,4 +1,5 @@
-const fs = require("fs");
+// const fs = require("fs");
+import fs from "fs";
 
 fs.writeFile("Jit2.txt", "Today Rohit's Birthday", () => {
     console.log("Done");
