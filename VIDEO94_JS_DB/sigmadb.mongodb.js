@@ -1,7 +1,7 @@
 
 use('SigmaDb');
 
-// Insert a few documents into the sales collection.
+// Insert a few documents into the COURSES collection.
 db.getCollection('couses').insertMany([
     {
       "name": "Java",
