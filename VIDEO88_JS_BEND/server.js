@@ -39,13 +39,21 @@ app.get('/blog', (req, res) => {
 
 app.get('/blog/:slug', (req, res) => {
     //logic to fetch ${slug} from db
-    console.log(req);
+    // console.log(req);
     //params comes in url as variable
+
+    // for this url->http://localhost:3000/blog/jit?mode=dark&region=in
+    console.log(req.params);
+    console.log(req.query);
+
+    // output-- >
+    //     { slug: 'jit' }
+    // { mode: 'dark', region: 'in' }
     res.send(`Hello ${req.params.slug}`);
 
     // params and query---->
-//     params: { slug: 'h' },
-//   query: { mode: 'dark', region: 'in' },
+    //     params: { slug: 'h' },
+    //   query: { mode: 'dark', region: 'in' },
 })
 
 app.get('/blog/:slug/:second', (req, res) => {
@@ -54,11 +62,11 @@ app.get('/blog/:slug/:second', (req, res) => {
 })
 
 // app.get('/blog/intro-to-js', (req, res) => {
-    //logic to fetch intro to js from db
+//logic to fetch intro to js from db
 //     res.send('This is a blog about intro-to-js!')
 // })
 // app.get('/blog/intro-to-python', (req, res) => {
-    //logic to fetch intro to python from db
+//logic to fetch intro to python from db
 //     res.send('This is a blog about intro-to-python!')
 // })
 
