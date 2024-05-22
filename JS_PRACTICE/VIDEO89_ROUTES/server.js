@@ -1,6 +1,10 @@
 const express = require('express')
+const birds = require('./routes/birds')
 const app = express()
 const port = 3000
+
+
+app.use('/birds', birds)
 
 app.use(express.static('public'));
 
@@ -16,6 +20,10 @@ app.get('/', (req, res) => {
     console.log("Hey! it is a res.json()");
     
     res.json({a:1,b:2,c:3,d:4,name:["Harry","Jit"]});
+  })
+
+  app.get("/index", (req, res) => {
+    res.sendFile("templates/index.html",{root:__dirname});
   })
 
 app.listen(port, () => {
