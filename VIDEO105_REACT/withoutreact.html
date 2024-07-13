@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHY REACT?</title>
+    <style>
+      .box {
+        height: 121px;
+        width: 121px;
+        padding: 5px;
+        border: 2px solid black;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="counter">0</div>
+    <button class="btn">Click me</button>
+
+    <script>
+      document.querySelector(".btn").addEventListener("click", () => {
+        let num = parseInt(document.getElementById("counter").innerHTML);
+        document.getElementById("counter").innerHTML = num + 1;
+      });
+    </script>
+  </body>
+</html>
