@@ -1,0 +1,21 @@
+nav,ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+ul{
+    gap: 120px;
+    background-color: #0175bf;
+    height: 8vh;
+    width: 100vw;
+}
+ul{
+    justify-content:flex-end;
+    align-items: center;
+}
+ul li{
+    font-size: large;
+    font-weight: bold;
+    color: #ff5e00;
+}
